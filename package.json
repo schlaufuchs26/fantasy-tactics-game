@@ -1,0 +1,13 @@
+{
+  "name": "fantasy-tactics-game",
+  "version": "1.0.0",
+  "description": "A 2D fantasy turn-based tactics game built with TypeScript and HTML5 Canvas",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npx http-server dist -p 8080 -o"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚔️ Fantasy Tactics</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #e0e0e0;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      color: #ffd54f;
+      text-shadow: 0 0 20px rgba(255,213,79,0.3);
+      letter-spacing: 2px;
+    }
+    .subtitle {
+      font-size: 0.85rem;
+      color: #78909c;
+      margin-bottom: 12px;
+    }
+    canvas {
+      border: 2px solid #1e3a5f;
+      border-radius: 6px;
+      box-shadow: 0 0 40px rgba(30,58,95,0.4);
+      cursor: pointer;
+      max-width: 95vw;
+      max-height: 85vh;
+    }
+    .controls {
+      margin-top: 10px;
+      font-size: 0.75rem;
+      color: #546e7a;
+    }
+    .controls span { margin: 0 10px; }
+  </style>
+</head>
+<body>
+  <h1>⚔️ Fantasy Tactics ⚔️</h1>
+  <p class="subtitle">Turn-based tactical combat — defeat all enemies to win!</p>
+  <canvas id="game"></canvas>
+  <div class="controls">
+    <span>🟢 Green = Move range</span>
+    <span>🔴 Red = Attack range</span>
+    <span>🟣 Purple = Ability range</span>
+    <span>🌲 Forest = cover + slow</span>
+    <span>🌊 Water = impassable</span>
+  </div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
